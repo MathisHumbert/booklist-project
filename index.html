@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>BookList Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <i class="fas fa-book-open"></i>
+        <h1>My<span>Book</span>List</h1>
+      </header>
+
+      <!-- form -->
+      <form action="" class="form">
+        <!-- single-input -->
+        <div class="single-input">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" />
+        </div>
+        <!-- single-input -->
+        <div class="single-input">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" />
+        </div>
+        <!-- single-input -->
+        <div class="single-input">
+          <label for="isbn">ISBN#</label>
+          <input type="text" name="isbn" id="isbn" />
+        </div>
+        <input type="submit" value="Add Book" id="btn" />
+      </form>
+
+      <!-- table -->
+      <table>
+        <thead>
+          <tr>
+            <td>Title</td>
+            <td>Author</td>
+            <td>ISBN#</td>
+          </tr>
+        </thead>
+        <tbody class="table-list">
+          <tr>
+            <td>Book Two</td>
+            <td>Mathis Humbert</td>
+            <td>163784</td>
+            <td><button class="btn"></button></td>
+          </tr>
+          <tr>
+            <td>Book Two</td>
+            <td>Lisa Mora</td>
+            <td>7473</td>
+            <td><button class="btn"></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- js -->
+    <script src="./app.js"></script>
+  </body>
+</html>
