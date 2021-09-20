@@ -21,7 +21,7 @@ function handleForm(e) {
   <td>${title}</td>
   <td>${author}</td>
   <td>${isbn}</td>
-  <td><button class="btn"></button></td>
+  <td><button class="btn"><i class="fas fa-times"></i></button></td>
   `;
   tableBody.appendChild(table);
 
@@ -34,7 +34,8 @@ function handleForm(e) {
   this.reset();
 }
 
-// delter function
+// delete function
 function deletClickBtn(e) {
-  tableBody.removeChild(e.target.parentElement.parentElement);
+  console.log(e.currentTarget);
+  tableBody.removeChild(e.currentTarget.parentElement.parentElement);
 }
