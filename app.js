@@ -1,5 +1,4 @@
 // get the elements
-const btn = document.querySelector('#btn');
 const form = document.querySelector('.form');
 const tableBody = document.querySelector('.table-list');
 
@@ -17,8 +16,25 @@ function handleForm(e) {
     return;
   }
 
-  const 
+  const table = document.createElement('tr');
+  table.innerHTML = `
+  <td>${title}</td>
+  <td>${author}</td>
+  <td>${isbn}</td>
+  <td><button class="btn"></button></td>
+  `;
+  tableBody.appendChild(table);
 
-  console.log(title, author, isbn);
+  // deleteAction
+  const deleteBtn = tableBody.querySelectorAll('.btn');
+  deleteBtn.forEach((btn) => {
+    btn.addEventListener('click', deletClickBtn);
+  });
+
   this.reset();
+}
+
+// delter function
+function deletClickBtn(e) {
+  tableBody.removeChild(e.target.parentElement.parentElement);
 }
