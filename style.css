@@ -62,9 +62,20 @@ form {
 
 .single-input input {
   padding: 8px;
-  border-radius: 2px;
-  border: 1px solid #222;
+  border-radius: 5px;
+  border: 1px solid hsl(178, 51%, 75%);
   font-size: 18px;
+  background-color: hsl(178, 51%, 90%);
+  padding: 12px;
+  color: #9ca0ac;
+}
+
+.single-input input::placeholder {
+  color: #9ca0ac;
+}
+
+.single-input input:focus {
+  outline: 0;
 }
 
 input[type='submit'] {
@@ -75,6 +86,14 @@ input[type='submit'] {
   font-weight: 500;
   font-size: 20px;
   cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px;
+  margin: 10px 0 20px;
+}
+
+input[type='submit']:active {
+  transform: scale(0.98);
 }
 
 /* table */
@@ -82,8 +101,9 @@ input[type='submit'] {
 table {
   width: 90%;
   margin: 0 auto;
-  border-top: 1px solid red;
+  border-top: 1px solid #9ca0ac;
   border-collapse: collapse;
+  max-width: 700px;
 }
 
 tbody {
@@ -92,25 +112,34 @@ tbody {
 
 thead tr td {
   text-align: left;
-  color: teal;
-  border-bottom: 1px solid red;
+  color: #222;
+  border-bottom: 1px solid #9ca0ac;
   padding: 1rem;
 }
 
 tbody tr td {
   text-align: left;
-  color: teal;
-  border-bottom: 1px solid red;
+  color: #222;
+  border-bottom: 1px solid #9ca0ac;
   padding: 1rem;
 }
 
+tbody tr:nth-child(even) {
+  background-color: hsl(225, 9%, 94%);
+}
 .btn {
   border: 0;
   background-color: #eb2f06;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .fa-times {
-  font-size: 20px;
+  font-size: 16px;
   padding: 8px;
+  color: #fff;
+}
+
+.special {
+  opacity: 0;
 }

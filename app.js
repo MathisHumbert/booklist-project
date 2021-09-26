@@ -36,6 +36,5 @@ function handleForm(e) {
 
 // delete function
 function deletClickBtn(e) {
-  console.log(e.currentTarget);
   tableBody.removeChild(e.currentTarget.parentElement.parentElement);
 }
