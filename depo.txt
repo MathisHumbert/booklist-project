@@ -85,5 +85,3 @@ function deletClickBtn(e) {
 
   localStorage.setItem('books', JSON.stringify(books));
 }
-
-// VIDEO SOLUTION
